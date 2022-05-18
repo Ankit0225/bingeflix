@@ -1,0 +1,124 @@
+
+.headers{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    width: 100%;
+    background: url("../../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    background-position-x: 1%;
+    background-size: 15%;
+    padding-top: 80px;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 14px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 0px;
+    color: white;
+    border: 0px solid rgba(255, 255, 255, 0);
+}
+.headers .category
+{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: absolute;
+    font-size: 17px;
+    margin-top: -40px;
+    right: 2%;
+    
+}
+.Movies
+{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 40px;
+margin-top: -18px;
+flex-direction: column;
+right: 3%;
+font-weight: bolder;
+/* border: 2px solid black; */
+text-align: center;
+}
+.Movies:hover, .Movies:active{
+    transform: scale(1.15);
+    cursor: pointer;
+    transition: .7s ease-out;
+}
+.text{
+    margin-right: 30px;
+}
+@media (max-width: 1000px) {
+    .headers{
+        padding-top: 60px;
+        background-size: 20%;
+        font-weight: bold;
+    }
+    .headers .category{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        position: absolute;
+        font-size: 15px;
+        margin-top: -30px;
+        right: 3%; 
+    }
+    .group {
+        max-width: 100px;
+        margin-right: 10px;
+        margin-top: -18px;
+    }
+}
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+    margin-right: 110px;
+    margin-top: -18px;
+}
+   
+.input {
+    width: 300px;
+    /* background-color: black; */
+    height: 35px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}
+   
+
+  
+   
+   
+   
