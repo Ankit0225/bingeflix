@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './header.css';
 import {FaHome, FaVideo,FaTv, FaRegUserCircle,FaSearch} from 'react-icons/fa';
 import {Button} from '@mantine/core';

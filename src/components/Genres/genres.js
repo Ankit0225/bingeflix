@@ -1,7 +1,7 @@
 import { Chip, Chips } from '@mantine/core'
 import axios from 'axios'
 import React, { useEffect } from 'react'
-import MovieDetails from '../Details/movieDetails'
+// import MovieDetails from '../Details/movieDetails'
 
 const Genres = ({
    type,
