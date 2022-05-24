@@ -20,7 +20,7 @@ const Content = (
     <MovieDetails title={title} rating={rating} media_type={media_type} id={id} overview={overview} image={image}>
         <div className='home'>
          <img className='image' src={image ? `${img_500}${image}` : unavailable} alt={title}/>
-         <img className='backdrop' src={image ? `${img_500}${backdrop_image}` : unavailableLandscape} alt={title}/>
+         {/* <img className='backdrop' src={image ? `${img_500}${backdrop_image}` : unavailableLandscape} alt={title}/> */}
          <div className='container'>
           <b className='title'>{title}</b>
             <span className='overview'>{overview}</span>
