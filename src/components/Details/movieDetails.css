@@ -1,0 +1,57 @@
+
+.movieimages{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0%;
+  top: 0;
+  max-width: 40%;
+  max-height: 100%;
+  /* background-color: red; */
+}
+.onlytext{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 200;
+  width: 65%;
+  color: white !important;
+  height: auto;
+  /* background-color: red; */
+  margin: 30px;
+}
+.movietitle{
+  position: absolute;
+   margin-top: 7%;
+   left: 1px;
+   font-size: 30px;
+}
+.description{
+  position: absolute;
+  top: 80px;
+  left: 1px;
+  font-size: 20px;
+}
+@media (max-width: 1000px) {
+  
+}
+.mantine-on6odd{
+  background-color: rgba(0, 0, 0, .5);
+}
+.imagedetails{
+  height: 100%;
+  width: 100%;
+}
+.mantine-1vhreye {
+  position: absolute;
+  right: 0%;
+  z-index: 400;
+  border: none;
+  background-color: transparent;
+}
+.mantine-1vhreye:hover{
+  background-color: transparent;
+  border: none;
+}

@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
   scroll-behavior: smooth;
 }
 .App{
+  background-color: rgba(72, 79, 203, 0.4);
   min-width: 100vw;
   min-height: 100vh;
   color: white;
-  /* background-color: red; */
+  /* position: relative; */
+
   overflow-x: hidden;
 }
 .pageTitle {
@@ -13,7 +16,7 @@
   display: flex;
   position: relative;
   justify-content: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   margin-top: 80px;
   padding: 4px;

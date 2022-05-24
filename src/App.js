@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter , Routes, Route } from "react-router-dom";
 import './App.css';
 import Header from './components/headers/headers'
@@ -8,22 +8,25 @@ import Home from './pages/Home/home'
 import Movies from './pages/Movies/movies'
 import Search from "./pages/Search/search";
 import Series from "./pages/Series/series";
-import Kids from "./pages/Kids/kids";
+import Profile from "./pages/Profile/profile";
 
 
 function App() {
+
+  const [search, setSearch] = useState("");
   return (
     <>
     <BrowserRouter>
-     <Header />
+     <Header search={search} setSearch={setSearch}/>
     <div className="App">
      <Container>
        <Routes>
-         <Route path="/search" element={<Search />}/>
+       {/* components={() => (<Comments myProp="value" />)} */}
+         <Route search={search} setSearch={setSearch} path="/search" element={<Search search={search} setSearch={setSearch}/>}/>
          <Route path="/" element={<Home />} exact/>
          <Route path="/Movies" element={<Movies />}/>
          <Route path="/Series" element={<Series />}/>
-         <Route path="/Kids" element={<Kids />}/>
+         <Route path="/Profile" element={<Profile />}/>
        </Routes>
      </Container>
      <Footer />
