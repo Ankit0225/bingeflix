@@ -49,7 +49,7 @@ const MovieDetails = ({children, backdrop, image, media_type, id, title, rating,
       sx={{
         position: 'absolute',
         top: 0,
-        height: '45%',
+        height: '55%',
         width: '100%',
         overflow: "hidden",
         color: "white",
