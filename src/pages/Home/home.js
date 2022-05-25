@@ -21,7 +21,7 @@ const Home = () => {
       window.scroll(0,0);
         fetchTrendingData();
     }, [page]);
-
+   console.log(content.backdrop_path);
   return (
     <div>
         <span className="pageTitle">Trending</span>
@@ -37,7 +37,8 @@ const Home = () => {
                 media_type={e.media_type}
                 rating={e.vote_average}
                 overview={e.overview}
-                
+                backdrop={e.backdrop_path}
+            
                     />)
             }
         </div>

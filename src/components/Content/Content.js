@@ -7,7 +7,7 @@ const Content = (
     {
         id,
         image,
-        backdrop_image,
+        backdrop,
         title,
         date,
         media_type,
@@ -17,7 +17,7 @@ const Content = (
 ) => {
   return (
       <>
-    <MovieDetails title={title} rating={rating} media_type={media_type} id={id} overview={overview} image={image}>
+    <MovieDetails backdrop={backdrop} title={title} rating={rating} media_type={media_type} id={id} overview={overview} image={image}>
         <div className='home'>
          <img className='image' src={image ? `${img_500}${image}` : unavailable} alt={title}/>
          <div className='container'>

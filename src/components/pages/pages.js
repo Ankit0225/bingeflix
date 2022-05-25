@@ -14,7 +14,8 @@ const Pages = ({setpage, numofpages = 10}) => {
           display: "flex",
           justifyContent: "center",
           width: "100%",
-          marginTop: 200,
+          marginTop: 150,
+          marginBottom: 60,
           zIndex: 10,
       }}>
     <Pagination 

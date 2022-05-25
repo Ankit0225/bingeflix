@@ -1,25 +1,23 @@
-import {  Overlay, Box, Drawer, Group, useMantineTheme, Image } from "@mantine/core";
+import {  Overlay, Box, Drawer, Group  } from "@mantine/core";
 import axios from "axios";
 import {FcRating} from 'react-icons/fc'
 
 import React, { useEffect, useState } from "react";
 import "./movieDetails.css";
 import {
-  img_500,
-  unavailable,
-  unavailableLandscape,
+  img_500
 } from "../../config/config";
 
-const MovieDetails = ({ children, image, media_type, id, title, rating, overview,genres }) => {
+const MovieDetails = ({children, backdrop, image, media_type, id, title, rating, overview,genres }) => {
   const [opened, setOpened] = useState(false);
-//   const theme = useMantineTheme();
+
   const [content, setContent] = useState();
   const [video, setvideo] = useState();
   const fetchImage = async () => {
     const { data } = await axios.get(
-      `https://api.themoviedb.org/3/${media_type}/${id}?api_key=6bc3d152fb9f35c5d3ab3899a7fb22e5&language=en-US`
+      `https://api.themoviedb.org/3/${media_type}/${id}/images?api_key=6bc3d152fb9f35c5d3ab3899a7fb22e5&language=en-US`
     );
-    // console.log(data.backdrop_path);
+    // console.log(data);
     setContent(data);
   };
 
@@ -34,11 +32,7 @@ const MovieDetails = ({ children, image, media_type, id, title, rating, overview
     fetchImage();
     fetchVideo();
   }, []);
-
- 
-
-   
-   
+  
   return (
     <>
       <Drawer
@@ -55,7 +49,7 @@ const MovieDetails = ({ children, image, media_type, id, title, rating, overview
       sx={{
         position: 'absolute',
         top: 0,
-        height: '80%',
+        height: '45%',
         width: '100%',
         overflow: "hidden",
         color: "white",
@@ -69,13 +63,13 @@ const MovieDetails = ({ children, image, media_type, id, title, rating, overview
     >
        
        <div className="movieimages">
-       <img style={{height: "auto"}} className="imagedetails" alt={title} src={`${img_500}${image}`}/>
+       <img className="imagedetails" alt={title} src={backdrop ? `${img_500}${backdrop}` : `${img_500}${image}`}/>
        </div>
       <Overlay
         gradient={`linear-gradient(90deg, rgba(15,23,30,1) 50%, rgba(15,23,30,0.1) 100%)`}
       />
     </Box> 
-    <div></div>
+    
        <div className="onlytext">
        <div className="movietitle">{title}</div>
        <div className="movierating">IMDB: <FcRating /> {rating}</div>
@@ -89,7 +83,7 @@ const MovieDetails = ({ children, image, media_type, id, title, rating, overview
 
       <Group position="center">
         <div style={{height: '500px'}} className="fixed" onClick={() => setOpened(true)}>
-          {children}
+         {children}
         </div>
       </Group>
     </>

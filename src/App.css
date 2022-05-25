@@ -2,6 +2,9 @@
 * {
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 .App{
   background-color: rgba(72, 79, 203, 0.4);
   min-width: 100vw;
