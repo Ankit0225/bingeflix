@@ -3,10 +3,11 @@
   display: flex;
   justify-content: center;
   position: absolute;
+  height: 100%;
+  object-fit: contain;
   right: 0%;
   top: 0;
   max-width: 40%;
-  max-height: 100%;
   /* background-color: red; */
 }
 .onlytext{
@@ -53,5 +54,5 @@
 }
 .mantine-1vhreye:hover{
   background-color: transparent;
-  border: none;
+  border: transparent;
 }
