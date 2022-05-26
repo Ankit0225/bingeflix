@@ -21,7 +21,7 @@ const Home = () => {
       window.scroll(0,0);
         fetchTrendingData();
     }, [page]);
-   console.log(content.backdrop_path);
+  //  console.log(content.id);
   return (
     <div>
         <span className="pageTitle">Trending</span>
@@ -38,7 +38,7 @@ const Home = () => {
                 rating={e.vote_average}
                 overview={e.overview}
                 backdrop={e.backdrop_path}
-            
+                genres={e.genre_ids}
                     />)
             }
         </div>

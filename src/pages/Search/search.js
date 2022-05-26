@@ -12,7 +12,7 @@ const Movies = ({search,setSearch}) => {
     const {data } = await axios.get(
       `https://api.themoviedb.org/3/search/multi?api_key=6bc3d152fb9f35c5d3ab3899a7fb22e5&language=en-US&query=${search}&page=${page}&include_adult=false`
       );
-  //     // console.log(data);
+      // console.log(data.results);
     setContent(data.results)
     setnumofpages(data.total_pages)
   } 
@@ -38,6 +38,8 @@ const Movies = ({search,setSearch}) => {
                     media_type={e.media_type}
                     rating={e.vote_average}
                     overview={e.overview}
+                    backdrop={e.backdrop_path}
+                    genres={e.genre_ids}
                     />)
             }
         </div>

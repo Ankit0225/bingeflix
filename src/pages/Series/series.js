@@ -18,7 +18,7 @@ const Home = () => {
        const {data } = await axios.get(
          `https://api.themoviedb.org/3/discover/tv?api_key=6bc3d152fb9f35c5d3ab3899a7fb22e5&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genreURL}`
        );
-      //  console.log(data.results);
+       console.log(data.results);
 
    setContent(data.results)     
    setnumofpages(data.total_pages) 
@@ -51,6 +51,8 @@ const Home = () => {
                     media_type='tv'
                     rating={e.vote_average}
                     overview={e.overview}
+                    backdrop={e.backdrop_path}
+                    genres={e.genre_ids}
                     />)
             }
         </div>
