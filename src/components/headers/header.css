@@ -39,6 +39,18 @@
     right: 2%;
     
 }
+.icon{
+    width: 28px;
+    height: 28px;
+}
+
+.show{
+    opacity: 0;
+    transition: 1.5s ease-in-out;
+}
+.Movies:hover .show{
+    opacity: 1;
+}
 .Movies
 {
 display: flex;

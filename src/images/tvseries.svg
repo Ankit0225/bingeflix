@@ -1,0 +1,4 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="Vector10" width="144" height="125" viewBox="0 0 144 125" fill="#272731" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<path d="M72.25 84H140V4H4.5V84H72.25ZM72.25 84L32 120.5H110L72.25 84ZM52.5 26.5V62.5L84.5 45.5L52.5 26.5Z" stroke="white" stroke-width="8" stroke-linejoin="round" stroke-dasharray="725.2962646484375,0,0,0"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="1" dur="3.5714285714285716s" begin="mouseover" from="0,0,0,725.2962646484375" to="725.2962646484375,0,0,0"  fill="freeze"></animate></path>
+<setting>{"type":"direct","speed":14,"random":1,"shift":1,"size":1,"rupture":50}</setting></svg>

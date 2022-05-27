@@ -1,9 +1,12 @@
 import React from 'react';
 import './header.css';
-import {FaHome, FaVideo,FaTv, FaRegUserCircle,FaSearch} from 'react-icons/fa';
+import {FaSearch} from 'react-icons/fa';
 import {Button} from '@mantine/core';
 import {useNavigate} from 'react-router-dom'
-
+import {ReactComponent as HomeSvg} from '../../images/home.svg'
+import {ReactComponent as TVSeries} from '../../images/tvseries.svg'
+import {ReactComponent as Profile} from '../../images/profile.svg'
+import {ReactComponent as Cinema} from '../../images/movies.svg'
 
 const Header = ({search, setSearch}) => {
   const navigate = useNavigate();
@@ -18,19 +21,27 @@ const Header = ({search, setSearch}) => {
            <Button onClick={() => navigate('/search')}><FaSearch /></Button>
            </div>
         <div onClick={() => navigate('/')} className='Movies Home'>
-          <FaHome />
+           <div className='icon'>
+             <HomeSvg/>
+           </div>
          <div className='show'> Home </div>
         </div>
         <div onClick={()=> navigate('/movies')} className='Movies'>
-          <FaVideo />
+        <div className='icon'>
+             <Cinema />
+           </div>
           <div className='show'> Movies </div>
         </div>
         <div onClick={()=> navigate('/series')} className='Movies'>
-         <FaTv /> 
+        <div className='icon'>
+             <TVSeries/>
+           </div>
          <div className='show'> TV Series </div>
         </div>
         <div onClick={()=> navigate('/profile')} className='Movies'>
-          <FaRegUserCircle />
+        <div className='icon'>
+             <Profile />
+           </div>
          <div className='show'>Profile</div>
         </div>
       </div>

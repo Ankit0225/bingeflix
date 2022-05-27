@@ -1,4 +1,4 @@
-import { Overlay, Box, Drawer, Group, ScrollArea } from "@mantine/core";
+import { Overlay, Box, Drawer, Group } from "@mantine/core";
 import myobj from "../../components/Genres/setupmovies.json";
 import axios from "axios";
 import { FcRating } from "react-icons/fc";
@@ -31,7 +31,7 @@ const MovieDetails = ({
     //  );
     //  console.log(data.results);
 
-//  setContent(data.results)
+    //  setContent(data.results)
     const formdata = new FormData();
     formdata.append('movie_name',title);
     formdata.append('number_of_recommendations', '10')
@@ -45,19 +45,20 @@ const MovieDetails = ({
       data: formdata,
       headers: { "Content-Type": "multipart/form-data" },
     })
-    .then ( async function (response) {
+    .then (async function (response) {
       //handle success
       let moviedata = []
       console.log(response.data.recommendations,title);
       if(!response.data.recommendations)
       {
-        modelmedia=false;
+        // modelmedia=false;
+        fetchtvseries(media_type)
         return false;
       } 
         for(let movie in response.data.recommendations)
         {
           // console.log(movie);
-          const {data } = await axios.get(
+          const { data } = await axios.get(
             `https://api.themoviedb.org/3/${media_type}/${response.data.recommendations[movie].movie_id}?api_key=6bc3d152fb9f35c5d3ab3899a7fb22e5&language=en-US`
           );
           moviedata.push(data)
@@ -71,7 +72,7 @@ const MovieDetails = ({
 };
 
 const fetchtvseries =  async (media_type) => {
-     const {data } = await axios.get(
+     const { data } = await axios.get(
        `https://api.themoviedb.org/3/${media_type.toLowerCase()}/${id}/similar?api_key=6bc3d152fb9f35c5d3ab3899a7fb22e5&language=en-US`
      );
   
@@ -82,16 +83,16 @@ const fetchtvseries =  async (media_type) => {
     if(media_type === 'movie')
     {
       fetchsimiliarmovies();
-      console.log(content);
-      if(!modelmedia){
-        console.log("Get Movie");
-        fetchtvseries(media_type);
-      }
+      // console.log(content);
+      // if(!modelmedia){
+      //   console.log("Get Movie");
+      //   fetchtvseries(media_type);
+      // }
+
     } 
     else
     {
       fetchtvseries(media_type);
-  
     }
   },[])
   function getgenre(id) {
