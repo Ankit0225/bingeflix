@@ -30,7 +30,7 @@ const Genres = ({
         )
 
         setgenres(data.genres)  
-        console.log(data.genres);
+        // console.log(data.genres);
     };
    useEffect(() => {
        fetchGenres();

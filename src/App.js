@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter , Routes, Route } from "react-router-dom";
 import './App.css';
 import Header from './components/headers/headers'
@@ -9,13 +9,20 @@ import Movies from './pages/Movies/movies'
 import Search from "./pages/Search/search";
 import Series from "./pages/Series/series";
 import Profile from "./pages/Profile/profile";
-
+import Lazyloading from "./components/lazylaoding/lazyloading";
 
 function App() {
 
   const [search, setSearch] = useState("");
-  return (
+  const [hideload, sethide] = useState(true);
+  useEffect(() => {
+    setTimeout(()=>{
+      sethide(false)
+    },5000)
+  }, [])
+   return (
     <>
+    {hideload &&  <Lazyloading />}
     <BrowserRouter>
      <Header search={search} setSearch={setSearch}/>
     <div className="App">

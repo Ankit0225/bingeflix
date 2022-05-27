@@ -18,7 +18,7 @@ const Movies = () => {
     const { data } = await axios.get(
       `https://api.themoviedb.org/3/discover/movie?api_key=6bc3d152fb9f35c5d3ab3899a7fb22e5&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genreURL}`
     );
-    console.log(data.results);
+    // console.log(data.results);
     setContent(data.results);
     setnumofpages(data.total_pages);
   };

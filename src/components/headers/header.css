@@ -22,9 +22,10 @@
     /* border: 1px wheat solid;
      */
      cursor: pointer;
-    background: url('../../images/logo.png');
-    background-size: 100%;
+    background: url('https://cdn.discordapp.com/attachments/857691418285178890/979694495618695198/unknown.png');
+    background-size: 90%;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .headers > .category

@@ -23,16 +23,76 @@ const MovieDetails = ({
 
   const [opened, setOpened] = useState(false);
   const[content, setContent] = useState([]);
-  const fetchsimiliarmovies = async () => {
-     const {data } = await axios.get(
-       `https://api.themoviedb.org/3/${media_type}/${id}/similar?api_key=6bc3d152fb9f35c5d3ab3899a7fb22e5&language=en-US`
-     );
-     console.log(data.results);
+  var modelmedia = true;
 
- setContent(data.results)      
+  const fetchsimiliarmovies = async () => {
+    //  const {data } = await axios.get(
+    //    `https://api.themoviedb.org/3/tv/${id}/similar?api_key=6bc3d152fb9f35c5d3ab3899a7fb22e5&language=en-US`
+    //  );
+    //  console.log(data.results);
+
+//  setContent(data.results)
+    const formdata = new FormData();
+    formdata.append('movie_name',title);
+    formdata.append('number_of_recommendations', '10')
+    
+    // {testing data}
+    // movie_name: 'Avengers: Age of Ultron',
+    // number_of_recommendations: '10'
+    axios({
+      method: "post",
+      url: "https://bingeflix-backend.herokuapp.com/recommend_movie",
+      data: formdata,
+      headers: { "Content-Type": "multipart/form-data" },
+    })
+    .then ( async function (response) {
+      //handle success
+      let moviedata = []
+      console.log(response.data.recommendations,title);
+      if(!response.data.recommendations)
+      {
+        modelmedia=false;
+        return false;
+      } 
+        for(let movie in response.data.recommendations)
+        {
+          // console.log(movie);
+          const {data } = await axios.get(
+            `https://api.themoviedb.org/3/${media_type}/${response.data.recommendations[movie].movie_id}?api_key=6bc3d152fb9f35c5d3ab3899a7fb22e5&language=en-US`
+          );
+          moviedata.push(data)
+        }
+
+        // console.log(response.data.recommendations);
+        setContent(moviedata);
+      })
+       
+    // console.log(data);
 };
+
+const fetchtvseries =  async (media_type) => {
+     const {data } = await axios.get(
+       `https://api.themoviedb.org/3/${media_type.toLowerCase()}/${id}/similar?api_key=6bc3d152fb9f35c5d3ab3899a7fb22e5&language=en-US`
+     );
+  
+     setContent(data.results);
+}
   useEffect(()=> {
-    fetchsimiliarmovies();
+    // fetchsimiliarmovies();
+    if(media_type === 'movie')
+    {
+      fetchsimiliarmovies();
+      console.log(content);
+      if(!modelmedia){
+        console.log("Get Movie");
+        fetchtvseries(media_type);
+      }
+    } 
+    else
+    {
+      fetchtvseries(media_type);
+  
+    }
   },[])
   function getgenre(id) {
     let x = myobj.find((obj) => obj.id === id);
