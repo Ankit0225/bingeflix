@@ -48,7 +48,7 @@ const MovieDetails = ({
     .then (async function (response) {
       //handle success
       let moviedata = []
-      console.log(response.data.recommendations,title);
+      // console.log(response.data.recommendations,title);
       if(!response.data.recommendations)
       {
         // modelmedia=false;

@@ -28,7 +28,7 @@
   font-weight: bold ;
   margin-top: 90px;
   background: -webkit-linear-gradient( #000000, #00000062);
-  /* z-index: 100; */
+  z-index: -10;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 4px;
