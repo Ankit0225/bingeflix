@@ -37,9 +37,10 @@ Flask </b> and Deployed on Heroku and used to fetch the data from the backend ju
 ![System Architecture](https://cdn.discordapp.com/attachments/796397516643368961/980373711725142016/Group_76.jpg)
 
 --------
-### Prototype
+# [Prototype](https://www.figma.com/proto/Dt8RVdVk9s6BHbshuW1I5C/Movie-Recommender?node-id=53%3A96&scaling=scale-down&page-id=0%3A1&starting-point-node-id=53%3A96)
 
-https://www.figma.com/proto/Dt8RVdVk9s6BHbshuW1I5C/Movie-Recommender?node-id=53%3A96&scaling=scale-down&page-id=0%3A1&starting-point-node-id=53%3A96
+
+Click Above to see design
 
 --------
 ## Algorithms Used
