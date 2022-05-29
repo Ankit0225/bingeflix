@@ -46,7 +46,7 @@ Click Above to see design
 ## Algorithms Used
 
 1. <b> K Nearest Neighbors </b>
-2. <b> Heap Sort Algorithm by Heap-Js </b>
+<!-- 2. <b> Heap Sort Algorithm by Heap-Js </b> -->
 
 ------
 ### Working Content-Based Recommendation System
