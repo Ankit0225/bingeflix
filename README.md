@@ -159,7 +159,6 @@ https://towardsdatascience.com/creating-restful-apis-using-flask-and-python-655b
 https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
 
 <p align="center">And</p> 
-<br>
 
 https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
 
