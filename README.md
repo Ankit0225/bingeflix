@@ -65,9 +65,9 @@ It is a very basic common approach for implementing the recommendation system. I
  ### [Article Reffered for KNN Algorithm](https://cs.carleton.edu/cs_comps/0910/netflixprize/final_results/knn/index.html)
 
 
-## Sorting Algorithm
+<!-- ## Sorting Algorithm
 
-Using Heap Sort the movies and TV Series get sort within no time using Heap-JS
+Using Heap Sort the movies and TV Series get sort within no time using Heap-JS -->
 ## Features
 
 - Shows Present Trending Movies and Series
