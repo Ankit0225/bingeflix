@@ -21,13 +21,7 @@ Flask </b> and Deployed on Heroku and used to fetch the data from the backend ju
 <b>API Backend Link :</b> (https://bingeflix-backend.herokuapp.com/)
 
 -----
-
-
-
-
-![<b>Trending Page</b>](https://cdn.discordapp.com/attachments/926055068271251467/980163620082155600/unknown.png)
-
-## Movies
+![Trending Page](https://cdn.discordapp.com/attachments/926055068271251467/980163620082155600/unknown.png)
 
 ![Movies](https://cdn.discordapp.com/attachments/926055068271251467/980164721212817428/unknown.png)
 
@@ -67,8 +61,7 @@ It is a very basic common approach for implementing the recommendation system. I
 ![Imgur](https://i.imgur.com/4HFOKJt.png)
 
 
- ### Article Reffered for KNN Algorithm
-https://cs.carleton.edu/cs_comps/0910/netflixprize/final_results/knn/index.html
+ ### [Article Reffered for KNN Algorithm](https://cs.carleton.edu/cs_comps/0910/netflixprize/final_results/knn/index.html)
 
 
 ## Sorting Algorithm
@@ -143,33 +136,19 @@ using Code Coverage through Chai and Jest JS
 #### Backend
 
 
-1. Towards DataScience.com
-<br>
-https://towardsdatascience.com/how-to-build-from-scratch-a-content-based-movie-recommender-with-natural-language-processing-25ad400eb243
+1. [Towards DataScience.com](https://towardsdatascience.com/how-to-build-from-scratch-a-content-based-movie-recommender-with-natural-language-processing-25ad400eb243)
 
-2. Towards DataScience.com
-<br>
-https://towardsdatascience.com/build-a-movie-recommendation-engine-backend-api-in-5-minutes-part-2-851b840bc26d
+2. [Towards DataScience.com](https://towardsdatascience.com/build-a-movie-recommendation-engine-backend-api-in-5-minutes-part-2-851b840bc26d)
 
-3. Flask API
-https://towardsdatascience.com/creating-restful-apis-using-flask-and-python-655bad51b24#:~:text=A%20Comprehensive%20Guide%20for%20building%20Web%20APIs%20with%20Flask&text=Flask%20is%20a%20widely,scale%20up%20to%20complex%20applications
+3. [Flask API](https://towardsdatascience.com/creating-restful-apis-using-flask-and-python-655bad51b24#:~:text=A%20Comprehensive%20Guide%20for%20building%20Web%20APIs%20with%20Flask&text=Flask%20is%20a%20widely,scale%20up%20to%20complex%20applications)
 
-4. The Movies Dataset from kaggle
-
-https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
-
-<p align="center">And</p> 
-
-https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata
+4. [IMDB 5000 Dataset](https://www.kaggle.com/carolzhangdc/imdb-5000-movie-dataset)
+5. [Movies Dataset](https://www.kaggle.com/rounakbanik/the-movies-dataset)
 
 -----------------------------------------------------------
 
 Frontend
 
-1. The Movie DataBase Organisation
-<br>
-https://www.themoviedb.org/
+1. [The Movie DataBase Organisation](https://www.themoviedb.org/)
 
-2. Mantine.dev
-<br>
-https://mantine.dev/
+2. [Mantine.dev](https://mantine.dev/)
