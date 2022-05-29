@@ -27,15 +27,16 @@ Flask </b> and Deployed on Heroku and used to fetch the data from the backend ju
 
 # Demo
 
-![Gifs Video](https://media.giphy.com/media/TReZvIs4YgW1fao6yC/giphy.gif)
+<img src="https://media.giphy.com/media/TReZvIs4YgW1fao6yC/giphy.gif" width="100%" height="100%" />
+
 ## Movies
+
 ![Movies](https://cdn.discordapp.com/attachments/926055068271251467/980164721212817428/unknown.png)
 
 -------
 
 ## TV Series
 ![TV Series](https://cdn.discordapp.com/attachments/926055068271251467/980165029171200000/unknown.png)
-
 
 -----------
 
