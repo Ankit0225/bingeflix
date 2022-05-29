@@ -1,67 +1,107 @@
 
-# Binge Flex
-Discription goes here....
+# Binge Flix
+
+BingeFlix is an AI-based web application in which you can search for any Hollywood Movie. This application will provide all the information related to that movie, and the most interesting part, this application will provide you with the top 10 movie/Any TV Series recommendations based on your search. Also, the User can Sort the movie according to the user's needs and requirements.
+<br>
+
+![BingeFlix](https://cdn.discordapp.com/attachments/889884346301964348/980171554535137331/logo.png)
+
+<br>
+This application uses Content-Based Movie Recommendation to recommend movies to the user. TMDB API was used to retrieve all the information related to the movie and its cast. And Recommendation Engine is based on Cosine Similarity based on
+<b> K Nearest Neighbors Algorithm </b> which is made by <b>
+Flask </b> and Deployed on Heroku and used to fetch the data from the backend just like an API.
+
+<br>
 
 
-![BingeFlex](https://cdn.discordapp.com/attachments/889884346301964348/980171554535137331/logo.png)
+<b>Web Application Link :</b> (https://bingeflix-seven.vercel.app/)
+<br>
+<b>API Backend Link :</b> (https://bingeflix-backend.herokuapp.com/)
 
+
+
+
+
+
+
+![<b>Trending Page</b>](https://cdn.discordapp.com/attachments/926055068271251467/980163620082155600/unknown.png)
+
+# Demo
+
+![Gifs Video](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xx1eemzfyyhiumh8h1rl.gif)
+## Movies
+![Movies](https://cdn.discordapp.com/attachments/926055068271251467/980164721212817428/unknown.png)
+
+## TV Series
+![TV Series](https://cdn.discordapp.com/attachments/926055068271251467/980165029171200000/unknown.png)
+
+
+## System Architecture
+
+![System Architecture](https://cdn.discordapp.com/attachments/796397516643368961/980373711725142016/Group_76.jpg)
+
+
+### Prototype
+
+https://www.figma.com/proto/Dt8RVdVk9s6BHbshuW1I5C/Movie-Recommender?node-id=53%3A96&scaling=scale-down&page-id=0%3A1&starting-point-node-id=53%3A96
 
 ## Features
 
-- Chat with Bot
-- Added Gifs
-- Fullscreen mode
-- Web Sopported 
+- Shows Present Trending Movies and Series
+- Sort movies and TV Series according to User Demands
+- Recommended Similiar Movies when the user clicks on a particular    Movie.
 
 
-![Trending Page](https://cdn.discordapp.com/attachments/926055068271251467/980163620082155600/unknown.png)
+## Setup
+### Clone or Fork this Repository
 
-![Movies](https://cdn.discordapp.com/attachments/926055068271251467/980164721212817428/unknown.png)
+Run the following command to install the required dependencies.
+ 
+- Install the dependencies within the project directory:
+```
+npm install
+```
+- Start the Development Server
+```
+npm start
+```
 
-![TV Series](https://cdn.discordapp.com/attachments/926055068271251467/980165029171200000/unknown.png)
-## Demo
-
-![Gifs Video](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xx1eemzfyyhiumh8h1rl.gif)
 
 
 ## TechStack
-1. Front End / Client Side
-- ReactJS
-- TensorFlowJS - Gesture Detection
-- React Context API - App state management
-2. BackEnd Server:
 
-- Algolia search - data indexing
-- Heroku NodeJs environment - deployment.
+### <b>Frontend</b> :
+ - React JS
+ - Mantine 
 
-3. Data Management (Databases):
-- Firebase Firestore - Data management and messaging
-- Firebase Realtime-db - Online status and typing state management
-## Setup
+### <b>API</b> : 
+ - TMDB
+ - BingeFlix Backend
+ <br>
+ - Backend Test Demo
+![BingeFlix Backend Test](https://cdn.discordapp.com/attachments/796397516643368961/980362812704571432/unknown.png)
+### <b>Backend</b> :
+ - Python
+ - Flask
+ - scikit-learn
 
-Run the following command to install the required dependencies.
-
-1. `npm install ` - install the required dependencies
-2. `npm start` - start the development server
-3. Open http://localhost:3000 in your browser
-
-
-## Authors
-
-- [@BuddhadebChhetri](https://github.com/Buddhad)
+### Other Dependencies
+ - Axios
+ - React icons
+ - Jest 
 
 
-## 🚀 About Me
-I'm a Frontend Developer and i like to build projects that we can communicate with.
+The Following Application Performance is been rigorously tested
+using Code Coverage through Chai and Jest JS  
+### LightHouse Test Performance 
+
+![Test](https://cdn.discordapp.com/attachments/912221791592796190/980214843938336838/unknown.png)
 
 
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](http://buddhadebchhetri.bio.link/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/buddhadebchhetri/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Buddhadeb01)
 
 
-## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+
+
+
 
