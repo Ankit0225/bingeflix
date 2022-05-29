@@ -14,6 +14,8 @@ Flask </b> and Deployed on Heroku and used to fetch the data from the backend ju
 <br>
 
 -----
+## Live Demo 
+
 <b>Web Application Link :</b> (https://bingeflix-seven.vercel.app/)
 <br>
 <b>API Backend Link :</b> (https://bingeflix-backend.herokuapp.com/)
@@ -24,10 +26,6 @@ Flask </b> and Deployed on Heroku and used to fetch the data from the backend ju
 
 
 ![<b>Trending Page</b>](https://cdn.discordapp.com/attachments/926055068271251467/980163620082155600/unknown.png)
-
-# Demo
-
-<img src="https://media.giphy.com/media/TReZvIs4YgW1fao6yC/giphy.gif" width="100%" height="100%" />
 
 ## Movies
 
