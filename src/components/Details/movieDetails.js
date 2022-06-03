@@ -34,7 +34,7 @@ const MovieDetails = ({
     //  setContent(data.results)
     const formdata = new FormData();
     formdata.append('movie_name',title);
-    formdata.append('number_of_recommendations', '10')
+    formdata.append('number_of_recommendations', '20')
     
     // {testing data}
     // movie_name: 'Avengers: Age of Ultron',

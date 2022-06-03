@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="like" width="93" height="87" viewBox="0 0 93 87" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<path d="M11.5877 46.3314L43.5305 80.7165C45.1753 82.4871 47.9779 82.4871 49.6227 80.7165L81.5655 46.3314C90.349 36.8763 90.349 21.5465 81.5655 12.0914C72.7819 2.63622 58.5409 2.63622 49.7574 12.0914L49.6227 12.2364C47.9779 14.0069 45.1753 14.0069 43.5305 12.2364L43.3958 12.0914C34.6122 2.63622 20.3712 2.63622 11.5877 12.0914C2.80411 21.5465 2.80411 36.8763 11.5877 46.3314Z" stroke="black" stroke-width="8.31532" stroke-dasharray="0,0,0,254.72994995117188"><animate attributeType="XML" attributeName="stroke-dasharray" dur="0.9615384615384616s" values="0,0,0,254.72994995117188; 
+          0,127.36497497558594,127.36497497558594,0; 
+          254.72994995117188,0,0,0" keyTimes="0; 0.5; 1"  begin="mouseover" fill="freeze"></animate></path>
+<setting>{"type":"direct","speed":52,"random":1,"shift":1,"size":1,"rupture":50}</setting></svg>
