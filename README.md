@@ -19,6 +19,8 @@ Flask </b> and Deployed on Heroku and used to fetch the data from the backend ju
 <b>Web Application Link :</b> (https://bingeflix-seven.vercel.app/)
 <br>
 <b>API Backend Link :</b> (https://bingeflix-backend.herokuapp.com/)
+<br>
+<b>If Upper API Fails then use test api:</b>(https://testing-bingeflix-backend.herokuapp.com/)
 
 -----
 ![Trending Page](https://cdn.discordapp.com/attachments/926055068271251467/980163620082155600/unknown.png)
