@@ -26,7 +26,7 @@ Flask </b> and Deployed on Heroku and used to fetch the data from the backend ju
 #### test API 
 <b>If Upper API Fails then use test api:</b>(https://testing-bingeflix-backend.herokuapp.com/)
 
-#### new API
+#### New API v2
 <b>New Version of API with better Recommendation</b> : (https://sooditk.ml)
 
 -----
