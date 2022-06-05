@@ -41,7 +41,7 @@ const MovieDetails = ({
     // number_of_recommendations: '10'
     axios({
       method: "post",
-      url: "https://testing-bingeflix-backend.herokuapp.com/recommend_movie",
+      url: "https://bingeflix-backend.herokuapp.com/recommend_movie",
       data: formdata,
       headers: { "Content-Type": "multipart/form-data" },
     })
